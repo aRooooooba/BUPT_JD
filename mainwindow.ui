@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>978</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>北邮人淘宝</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pics/buttonIcon/buttonicon.qrc">
+    <normaloff>:/money_774px_1207513_easyicon.net.png</normaloff>:/money_774px_1207513_easyicon.net.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>961</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <widget class="QWidget" name="allItemsW">
+     <widget class="QLineEdit" name="itemSearchKey">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>720</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>请输入搜索关键字</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="itemList">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>880</width>
+        <height>490</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>图片</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>简介</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="booksW">
+     <widget class="QTableWidget" name="bookList">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>880</width>
+        <height>490</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>图片</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>简介</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="bookSearchKey">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>720</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>请输入搜索关键字</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="clothesW">
+     <widget class="QTableWidget" name="clothList">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>880</width>
+        <height>490</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>图片</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>简介</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="clothSearchKey">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>720</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>请输入搜索关键字</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="electronicsW">
+     <widget class="QTableWidget" name="electronicList">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>880</width>
+        <height>490</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>图片</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>简介</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="electronicSearchKey">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>720</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>请输入搜索关键字</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="trolleyW">
+     <widget class="QTableWidget" name="trolleyList">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>881</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>选择</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>图片</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>数量</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>添加日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QCheckBox" name="allCheck">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全选/全不选</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>530</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>原价：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="originalPrice">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>520</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>16</pointsize>
+        <strikeout>true</strikeout>
+       </font>
+      </property>
+      <property name="text">
+       <string>123</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>530</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>现价：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentPrice">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>520</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(213, 78, 42);</string>
+      </property>
+      <property name="text">
+       <string>123</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>530</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>已优惠：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="discount">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>530</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>123</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pay">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>530</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(240, 82, 40);
+color: rgb(80, 80, 80);</string>
+      </property>
+      <property name="text">
+       <string>去支付</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="personalInfoW">
+     <widget class="QTableWidget" name="addressTable">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>330</y>
+        <width>271</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>地址信息</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>省市</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>收件人姓名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>收件人手机</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>详细地址</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>50</y>
+        <width>171</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>新增地址</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>171</width>
+         <height>333</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QComboBox" name="selectCity">
+          <item>
+           <property name="text">
+            <string>北京</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>上海</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>天津</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>重庆</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>黑龙江</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>吉林</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>辽宁</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>江苏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>山东</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>安徽</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>河北</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>河南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>湖北</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>湖南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>江西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>陕西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>山西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>四川</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>青海</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>海南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>广东</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>贵州</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>浙江</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>福建</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>台湾</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>甘肃</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>云南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>内蒙古</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>宁夏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>新疆</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>西藏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>广西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>香港</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>澳门</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="receiverName">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>收件人姓名</string>
+          </property>
+          <property name="placeholderText">
+           <string>收件人姓名</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="receiverPhone">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>收件人手机号</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDigitsOnly</set>
+          </property>
+          <property name="placeholderText">
+           <string>收件人手机号</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="detailedAddress">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>收件人详细地址</string>
+          </property>
+          <property name="placeholderText">
+           <string>收件人详细地址</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveAddress">
+          <property name="text">
+           <string>保存</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="deleteAddress">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>530</y>
+        <width>89</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>273</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>用户名：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="username">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="editPassword">
+         <property name="text">
+          <string>修改密码</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>关联的银行账户：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="bankAccount">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="deleteBankAccount">
+           <property name="text">
+            <string>解除绑定</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="addBankAccount">
+           <property name="text">
+            <string>添加账户</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="logout">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>490</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>退出当前账号</string>
+      </property>
+      <property name="text">
+       <string>注销</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="orderW">
+     <widget class="QTabWidget" name="orderTab">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>821</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="paymentRequired">
+       <attribute name="title">
+        <string>待支付</string>
+       </attribute>
+       <widget class="QTableWidget" name="waitForPayingList">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>750</width>
+          <height>390</height>
+         </rect>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <column>
+         <property name="text">
+          <string>图片</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>标题</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>最终价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>添加日期</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="deleteAllPayingOrders">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>440</y>
+          <width>89</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>清除全部</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="payNow">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>440</y>
+          <width>89</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>立即支付</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>430</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>总价：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="totalPrice">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>430</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>123</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="finished">
+       <attribute name="title">
+        <string>已完成</string>
+       </attribute>
+       <widget class="QTableWidget" name="finishedList">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>750</width>
+          <height>390</height>
+         </rect>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <column>
+         <property name="text">
+          <string>图片</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>标题</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>最终价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>添加日期</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="clearAllFinishedOrders">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>450</y>
+          <width>89</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>清除全部</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>978</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="allItems"/>
+   <addaction name="separator"/>
+   <addaction name="books"/>
+   <addaction name="separator"/>
+   <addaction name="clothes"/>
+   <addaction name="separator"/>
+   <addaction name="electronics"/>
+   <addaction name="separator"/>
+   <addaction name="trolley"/>
+   <addaction name="separator"/>
+   <addaction name="myInfo"/>
+   <addaction name="separator"/>
+   <addaction name="orders"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="allItems">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/allItem.png</normaloff>:/allItem.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>全部商品</string>
+   </property>
+  </action>
+  <action name="books">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/book.png</normaloff>:/book.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>图书</string>
+   </property>
+  </action>
+  <action name="clothes">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/cloth.png</normaloff>:/cloth.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>衣物</string>
+   </property>
+  </action>
+  <action name="electronics">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/electronic.png</normaloff>:/electronic.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>电器</string>
+   </property>
+  </action>
+  <action name="trolley">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/trolley.png</normaloff>:/trolley.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>购物车</string>
+   </property>
+  </action>
+  <action name="myInfo">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/myInfo.png</normaloff>:/myInfo.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>个人信息</string>
+   </property>
+  </action>
+  <action name="orders">
+   <property name="icon">
+    <iconset resource="pics/buttonIcon/buttonicon.qrc">
+     <normaloff>:/orders.png</normaloff>:/orders.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>我的订单</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="pics/buttonIcon/buttonicon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>c++primer.png</file>
+        <file>noPics.png</file>
+        <file>tigerRice.png</file>
+        <file>harryPotter.png</file>
+        <file>goneWithTheWind.png</file>
+        <file>dafenqiPassword.png</file>
+        <file>yurongfu.png</file>
+        <file>txu.png</file>
+        <file>bingxiang.png</file>
+        <file>weibolu.png</file>
+        <file>niuzaiku.png</file>
+    </qresource>
+</RCC>

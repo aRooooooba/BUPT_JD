@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>acceptBTN.png</file>
+        <file>addNewUser.png</file>
+        <file>rejectBTN.png</file>
+        <file>cancel.png</file>
+        <file>ensured.png</file>
+        <file>book.png</file>
+        <file>cloth.png</file>
+        <file>electronic.png</file>
+        <file>myInfo.png</file>
+        <file>trolley.png</file>
+        <file>allItem.png</file>
+        <file>orders.png</file>
+        <file>delete.png</file>
+        <file>money_774px_1207513_easyicon.net.png</file>
+    </qresource>
+</RCC>
